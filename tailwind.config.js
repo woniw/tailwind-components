@@ -6,7 +6,11 @@ export default {
     './src/components/**/*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Google Sans', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

@@ -7,19 +7,27 @@
   <link href="./dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Navigation</title>
-  <nav class="p-5">
-    <div class="bg-slate-300 w-full h-20 flex space-x-5 items-center rounded opacity-70 backdrop-blur-lg shadow-2xl">
-      <div class="navbar_title pl-6 text-4xl">Tailwind</div>
-      <div class="pl-6 text-2xl transition-all delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:text-3xl">Buttons</div>
-      <div class="text-2xl transition-all delay-150 duration-500 ease-in-out hover:text-3xl hover:-translate-y-1">Cards</div>
-
-      <div class="user_info">
-        <div class=""></div>
-      </div>
-    </div>
-  </nav>
 </head>
+<style>
+  body{
+    background-size: cover;
+    background-image: url('/assets/images/navigation-page-bg.jpg');
+  }
+</style>
 <body>
+<nav class="p-5">
+  <div class="bg-white/30 h-16 w-full rounded-lg shadow-md backdrop-blur-md flex items-center p-6">
+    <a class="font-sans text-xl text-gray-500 hover:scale-110 transition
+    duration-400 hover:text-gray-600" href="#">Tailwind</a>
+
+    <div class="font-sans flex ml-auto font-medium text-gray-500 text-sm space-x-6">
+      <a href="/src/views/button-components.html" class="hover:text-blue-500 hover:scale-105 transition duration-200">Buttons</a>
+      <a href="" class="hover:text-blue-500 hover:scale-105 transition duration-200">Cards</a>
+    </div>
+
+  </div>
+</nav>
+
   
 </body>
 </html>
