@@ -2,3 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .grid-item{
+        @apply bg-white/40 size-28 rounded backdrop-blur-lg shadow-2xl
+    }
+    .nav-bar{ @apply bg-white/30 h-16 w-full rounded-lg shadow-md backdrop-blur-md flex items-center p-6}
+    .nav-bar-title {
+        @apply font-sans text-xl text-gray-500 hover:scale-110 transition duration-300 hover:text-gray-600;
+    }
+    .nav-bar-link-container {
+        @apply flex ml-auto font-medium text-gray-500 text-sm space-x-6;
+    }
+    .nav-bar-link-item {
+        @apply hover:text-blue-500 hover:scale-105 transition duration-200;
+    }
+
+    .horizontal-scroll-item{
+        @apply h-96 w-80 bg-white/20 backdrop-blur-lg rounded-md flex-shrink-0
+    }
+}
